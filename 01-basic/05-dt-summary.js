@@ -35,3 +35,17 @@ const myFunction = function(){
 
 console.log(typeof anotherId)
 
+
+// ***********************************
+
+// Stack {primitive} , Heap {Non-Primitive}
+
+let myInstaname = "shahid"
+
+let anotherName = myInstaname
+anotherName = "shahidooig"
+
+console.log(myInstaname);
+console.log(anotherName);
+
+
