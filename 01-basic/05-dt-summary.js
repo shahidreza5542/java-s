@@ -49,3 +49,15 @@ console.log(myInstaname);
 console.log(anotherName);
 
 
+let userOne = {
+    email: "sjaj@gamil.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
