@@ -63,4 +63,3 @@ console.log(Instructer);
 //     name: "shahid",
 //     coursename: "js in hindi"
 //     price: "free"
-// }
