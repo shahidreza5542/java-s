@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Checker</title>
+</head>
+<body>
+    <h1 id="marktext">Your Grade</h1>
+
+    <script>
+        let marks = Number(prompt("Enter your marks:"));
+
+        if (marks >= 90) {
+            document.getElementById('marktext').innerHTML = "Grade: A";
+            console.log("Grade: A");
+        } 
+        else if (marks >= 75) {
+            document.getElementById('marktext').innerHTML = "Grade: B";
+            console.log("Grade: B");
+        } 
+        else if (marks >= 50) {
+            document.getElementById('marktext').innerHTML = "Grade: C";
+            console.log("Grade: C");
+        } 
+        else {
+            document.getElementById('marktext').innerHTML = "Grade: Fail";
+            console.log("Grade: Fail");
+        }
+    </script>
+</body>
+</html>
