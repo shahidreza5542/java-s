@@ -44,5 +44,13 @@
     newli.textContent = "mojo"
     seclang.replaceWith(newli)
 
+    //edit
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>Typescript</li>'
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove
+
 </script>
 </html>
