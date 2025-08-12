@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body style="background-color: #414141; color: #ffff;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="imageGallery">
+            </li>
+            <li id="france">
+                <img src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Eiffel Tower, Paris" width="200px" />
+            </li>
+            </li>
+            <li id="brazil">
+                <img src="https://images.pexels.com/photos/5608975/pexels-photo-5608975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Sugarloaf Mountain, Rio de Janeiro" width="200px" />
+            </li>
+            </li>
+            <li id="india">
+                <img src="https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Taj Mahal, India" width="200px" />
+            </li>
+            </li>
+            </li>
+            <li id="australia">
+                <img src="https://images.pexels.com/photos/15707765/pexels-photo-15707765/free-photo-of-the-sydney-opera-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Sydney Opera House, Australia" width="200px" />
+            </li>
+            <li id="uk">
+                <img src="https://images.pexels.com/photos/16147426/pexels-photo-16147426/free-photo-of-big-ben.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Big Ben, London" width="200px" />
+            </li>
+            <li id="mexico">
+                <img src="https://images.pexels.com/photos/7065961/pexels-photo-7065961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Chichen Itza Pyramid, Mexico" width="200px" />
+            </li>
+            <li> <a href="#" id="google">google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.querySelector('#india').onclick = function () {
+    //     alert('india')
+    // }
+
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, scrElement, surrenttarget,
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+
+    // const iamges = document.querySelector('#imageGallery')
+    // iamges.addEventListener('click', function (event) {
+    //     console.log("click inside the ul");
+        
+    // }, false)
+
+    // const india = document.querySelector('#india')
+    // india.addEventListener('click', function (e) {
+    //     console.log("india clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     console.log("google click");  
+    // })
+
+
+    document.querySelector('#imageGallery').addEventListener('click', function(event){
+        console.log(event);
+        console.log(event.target.tagName);
+        if (event.target.tagName === 'IMG', 'a') {
+            console.log(event.target.id);
+            
+            let removeit = event.target.parentNode
+        removeit.remove()
+        }
+        
+        // removeit.parentNode.removeChild(removeit)
+        
+    })
+
+
+
+
+</script>
+
+</html>
